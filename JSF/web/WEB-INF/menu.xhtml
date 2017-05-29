@@ -1,0 +1,34 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>MENU</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <p:menubar>
+                <p:submenu label="Cadastrar" icon="ui-icon-plusthick">
+                    <p:menuitem value="Cidade" url="cidade_cad.xhtml" />
+                    <p:separator />
+                    <p:menuitem value="Fornecedor" url="fornecedor_cad.xhtml" />
+                    <p:separator />
+                    <p:menuitem value="Cliente" url="cliente_cad.xhtml" />
+                </p:submenu>
+                <p:submenu label="Listar" icon="ui-icon-document">
+                    <p:menuitem value="Cidade" url="cidade_list.xhtml" />
+                    <p:separator />
+                    <p:menuitem value="Fornecedor" url="fornecedor_list.xhtml" />
+                    <p:separator />
+                    <p:menuitem value="Cliente" url="cliente_list.xhtml" />
+                </p:submenu>
+                <f:facet name="options">
+                    <p:inputText style="margin-right:10px" placeholder="Search" />
+                    <p:commandButton icon="ui-icon-search" />
+                </f:facet>
+            </p:menubar>
+        </h:form>
+    </h:body>
+</html>
